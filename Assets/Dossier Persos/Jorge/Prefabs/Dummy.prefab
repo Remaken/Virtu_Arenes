@@ -182,9 +182,8 @@ GameObject:
   - component: {fileID: 1401541921139375521}
   - component: {fileID: 1401541921139375535}
   - component: {fileID: 1401541921139375520}
-  - component: {fileID: 821426802728175664}
   - component: {fileID: 1401541921799059355}
-  - component: {fileID: 1401541921799059354}
+  - component: {fileID: 983972687987513161}
   m_Layer: 0
   m_Name: Right_hit
   m_TagString: Wood
@@ -257,19 +256,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &821426802728175664
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401541921139375522}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.005600002
-  m_Center: {x: 0.020147387, y: -0.0016509248, z: 0.02904905}
 --- !u!54 &1401541921799059355
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -286,8 +272,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &1401541921799059354
-SphereCollider:
+--- !u!65 &983972687987513161
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -297,8 +283,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005600002
-  m_Center: {x: 0.020147387, y: -0.0016509248, z: 0.02904905}
+  m_Size: {x: 0.011200005, y: 0.009170997, z: 0.011200007}
+  m_Center: {x: 0.020147271, y: 0.002134999, z: 0.02904906}
 --- !u!1 &1401541921196027805
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,9 +496,8 @@ GameObject:
   - component: {fileID: 1401541922248738751}
   - component: {fileID: 1401541922248738749}
   - component: {fileID: 1401541922248738750}
-  - component: {fileID: 821426803703968769}
   - component: {fileID: 1401541921100123052}
-  - component: {fileID: 1401541921100123051}
+  - component: {fileID: 2521480239069948950}
   m_Layer: 0
   m_Name: Left_hit
   m_TagString: Wood
@@ -585,19 +570,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &821426803703968769
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401541922248738736}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.0056000026
-  m_Center: {x: -0.01985263, y: -0.0016509248, z: 0.02904905}
 --- !u!54 &1401541921100123052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -614,8 +586,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &1401541921100123051
-SphereCollider:
+--- !u!65 &2521480239069948950
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -625,8 +597,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0056000026
-  m_Center: {x: -0.01985263, y: -0.0016509248, z: 0.02904905}
+  m_Size: {x: 0.011199957, y: 0.012671613, z: 0.011200012}
+  m_Center: {x: -0.019852705, y: 0.003814515, z: 0.029049046}
 --- !u!1 &1401541922528175991
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,8 +743,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01313521, y: 0.002180881, z: 0.01281345}
-  m_Center: {x: -0.019846432, y: -0.001728282, z: 0.029109623}
+  m_Size: {x: 0.013135203, y: 0.011179267, z: 0.012813452}
+  m_Center: {x: -0.01984643, y: 0.002770957, z: 0.029109621}
 --- !u!65 &1401541922528175989
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -784,8 +756,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.013135214, y: 0.0021808806, z: 0.012813447}
-  m_Center: {x: 0.02070784, y: -0.001677589, z: 0.029221877}
+  m_Size: {x: 0.0131352125, y: 0.0097994385, z: 0.012813447}
+  m_Center: {x: 0.020707836, y: 0.0021316535, z: 0.029221877}
 --- !u!1 &1401541922596386436
 GameObject:
   m_ObjectHideFlags: 0

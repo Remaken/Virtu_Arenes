@@ -64,7 +64,6 @@ public class Flammable : MonoBehaviour
         if (TestAnswer())
         {
             StartCoroutine(DelayBeforeWin(3f));
-            StartCoroutine(WinIndication(5f));
         }
         else
         { StartCoroutine(DelayBeforeLoose(3f)); }
@@ -85,6 +84,7 @@ public class Flammable : MonoBehaviour
         yield return new WaitForSeconds(duration);
         _corridorTorch.SetActive(true);
         helmet_cesar.SetActive(true);
+        StartCoroutine(WinIndication(5f));
         questionLock = true;
     }
     IEnumerator DelayBeforeLoose(float duration)
