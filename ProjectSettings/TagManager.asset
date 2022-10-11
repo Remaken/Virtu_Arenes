@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Bouclier
+  - Epee
+  - Casque
+  - Plastron
+  - Torche
+  - LeverTrigger
+  - Poignee
+  - Ground
+  - Base
+  - SpawnGround
+  - Chain_R
+  - Chain_L
+  - Barrel
+  - Enlighter
+  - Flamable_left
+  - Flamable_center
+  - Flamable_right
+  - StandTorch_Flammable
+  - Cube
+  - Sphere
+  - HitBox_Right
+  - HitBox_Left
+  - Stone
+  - Wood
+  - Iron
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Hands
+  - Interactive
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
