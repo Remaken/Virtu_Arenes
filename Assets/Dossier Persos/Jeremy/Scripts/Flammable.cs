@@ -11,6 +11,8 @@ public class Flammable : MonoBehaviour
     public GameObject leftTorch;
     public GameObject centerTorch;
     public GameObject rightTorch;
+    [SerializeField] private GameObject _corridorTorch;
+    [SerializeField] private GameObject _winIndicator;
 
     [SerializeField] private bool questionLock = false;
 
@@ -60,7 +62,10 @@ public class Flammable : MonoBehaviour
     private void HelmetPop() //fait apparaitre le casque selon certaines conditions
     {
         if (TestAnswer())
-        { StartCoroutine(DelayBeforeWin(2f)); }
+        {
+            StartCoroutine(DelayBeforeWin(3f));
+            StartCoroutine(WinIndication(5f));
+        }
         else
         { StartCoroutine(DelayBeforeLoose(3f)); }
     }
@@ -78,6 +83,7 @@ public class Flammable : MonoBehaviour
     IEnumerator DelayBeforeWin(float duration)
     {
         yield return new WaitForSeconds(duration);
+        _corridorTorch.SetActive(true);
         helmet_cesar.SetActive(true);
         questionLock = true;
     }
@@ -91,6 +97,12 @@ public class Flammable : MonoBehaviour
         {
             playerAnswer[i] = false;
         }
+    }
+    IEnumerator WinIndication(float duration)
+    {
+        _winIndicator.SetActive(true);
+        yield return new WaitForSeconds(duration);
+        _winIndicator.SetActive(false);
     }
 }
     
